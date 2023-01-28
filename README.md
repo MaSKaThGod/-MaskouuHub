@@ -17,22 +17,22 @@ label:ChangeText("Label")
 
 local toggle = section:Toggle("Toggle", function(bool)
    print("Toggle is: "..tostring(bool))
-end) -- Args(<String> Name, <Function> Callback)
+end) 
 toggle:Set(false) 
 
 section:Button("Button", function()
    print("Pressed button!")
 end) 
 
-local dropdown = section:Dropdown("Dropdown") -- Args(<String> Name)
-dropdown:ChangeText("Dropdown") -- Args(<String> NewText)
+local dropdown = section:Dropdown("Dropdown") 
+dropdown:ChangeText("Dropdown")
 dropdown:Toggle("Toggle") 
 
 section:Slider("Slider", function(val)
    print("Slider Value is: "..val)
 end) 
 
-local searchBar = section:SearchBar("Search...") -- Args(<String> PlaceholderText)
+local searchBar = section:SearchBar("Search...") 
 searchBar:Toggle("Toggle") 
 
 section:Keybind("Keybind", function()
